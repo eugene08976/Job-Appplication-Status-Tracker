@@ -1,0 +1,53 @@
+/* jobhunt-frontend/src/JobSubmission.css */
+
+.JobSubmissionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.JobSubmissionContainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.JobSubmissionContainer label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.JobSubmissionContainer input {
+  margin-top: 5px;
+}
+
+.submit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.job-submission-button {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.job-submission-button:hover {
+  background-color: #23527c;
+}
+
+.job-submission-button:focus {
+  outline: none;
+}
