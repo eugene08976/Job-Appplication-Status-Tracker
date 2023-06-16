@@ -52,10 +52,9 @@ Before running the application, make sure you have the following installed:
 ## Usage
 
 - Submitting a Job:
-  - Click on the "Jobs Applied" button on the top right corner.
   - Fill in the job details and click "Submit" to add a new job application.
 - Updating Job Status:
-  - In the application status page, select the desired job status from the "Update Status" dropdown.
+  - In the Job information Box, select the desired job status from the "Update Status" dropdown.
   - The status will be updated in real-time.
 - Filtering Jobs:
   - Use the filter buttons to filter jobs by status.
