@@ -13,11 +13,11 @@ Before running the application, make sure you have the following installed:
 
 ## Installation
 
-2. Navigate to the project directory: `cd job-application-tracker`
-3. Install frontend dependencies:
+1. Navigate to the project directory: `cd job-application-tracker`
+2. Install frontend dependencies:
    - Navigate to the frontend directory: `cd JobHuntAPI/jobhunt-frontend`
    - Run the command: `npm install`
-4. Install backend dependencies:
+3. Install backend dependencies:
    - Navigate to the backend directory: `cd JobHuntAPI`
    - Run the command: `pip install -r requirements.txt`
 
