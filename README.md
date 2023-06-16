@@ -6,38 +6,46 @@ This is a web application for job application tracking and status management.
 
 Before running the application, make sure you have the following installed:
 
+- Python (version 3.8 or higher)
+- Django (version 3.2 or higher)
+- Django REST framework (version 3.12 or higher)
 - Node.js (version 14 or higher)
-- MySQL (or an alternative relational database management system)
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/job-application-tracker.git`
 2. Navigate to the project directory: `cd job-application-tracker`
-3. Install dependencies for the frontend and backend:
-   - Frontend: `cd jobhunt-frontend && npm install`
-   - Backend: `cd jobhunt-backend && npm install`
+3. Install frontend dependencies:
+   - Navigate to the frontend directory: `cd JobHuntAPI/jobhunt-frontend`
+   - Run the command: `npm install`
+4. Install backend dependencies:
+   - Navigate to the backend directory: `cd JobHuntAPI`
+   - Run the command: `pip install -r requirements.txt`
 
 ## Configuration
 
 1. Database Configuration:
-   - Create a MySQL database and note down the connection details (host, port, username, password, database name).
-   - Open `jobhunt-backend/.env` file and update the following variables:
-     ```
-     DB_HOST=your-database-host
-     DB_PORT=your-database-port
-     DB_USER=your-database-username
-     DB_PASSWORD=your-database-password
-     DB_NAME=your-database-name
+   - Open `JobHuntAPI/JobHuntAPI/settings.py` file and update the following variables under the `DATABASES` section:
+     ```python
+     DATABASES = {
+         'default': {
+             'ENGINE': 'django.db.backends.mysql',
+             'NAME': 'your-database-name',
+             'USER': 'your-database-username',
+             'PASSWORD': 'your-database-password',
+             'HOST': 'your-database-host',
+             'PORT': 'your-database-port',
+         }
+     }
      ```
 
 ## Running the Application
 
 1. Start the backend server:
-   - Navigate to the `jobhunt-backend` directory: `cd jobhunt-backend`
-   - Run the command: `npm start`
+   - Navigate to the backend directory: `cd JobHuntAPI`
+   - Run the command: `python manage.py runserver`
 2. Start the frontend development server:
    - Open a new terminal
-   - Navigate to the `jobhunt-frontend` directory: `cd jobhunt-frontend`
+   - Navigate to the frontend directory: `cd JobHuntAPI/jobhunt-frontend`
    - Run the command: `npm start`
 3. Access the application in your web browser at `http://localhost:3000`
 
@@ -53,6 +61,3 @@ Before running the application, make sure you have the following installed:
   - Use the filter buttons to filter jobs by status.
   - Use the company filter input to filter jobs by company name.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
